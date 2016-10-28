@@ -1,0 +1,91 @@
+.blinker.animate-keyframe{
+	animation: 1.1s ease 0s normal none infinite running typewriterBlinker;
+}
+
+
+
+.ps {
+	width:98%; 
+	-moz-animation: ps 5s ease-out;
+	-webkit-animation: ps 5s ease-out;
+}
+
+.css {
+	width:98%;
+	-moz-animation: css 5s ease-out;
+	-webkit-animation: css 5s ease-out;
+}
+
+.wp {
+	width:98%;
+	-moz-animation: wp 5s ease-out;
+	-webkit-animation: wp 5s ease-out;
+}
+.drupal {
+	width:85%;
+	-moz-animation: drupal 5s ease-out;
+	-webkit-animation: drupal 5s ease-out;
+}
+
+
+.javascript {
+	width:70%;
+	-moz-animation: javascript 5s ease-out;
+	-webkit-animation: javascript 5s ease-out;
+}
+
+
+.php {
+	width:60%;
+	-moz-animation: php 5s ease-out;
+	-webkit-animation: php5s ease-out;
+}
+
+.seo {
+	width:60%;
+	-moz-animation: seo 5s ease-out;
+	-webkit-animation: seo 5s ease-out;
+}
+
+
+.uxpin {
+	width:98%;
+	-moz-animation: uxpin 5s ease-out;
+	-webkit-animation: uxpin 5s ease-out;
+}
+
+.sketch3 {
+	width:90%;
+	-moz-animation: sketch3 5s ease-out;
+	-webkit-animation: sketch3 5s ease-out;
+}
+
+.git {
+	width:80%;
+	-moz-animation: git 5s ease-out;
+	-webkit-animation: git 5s ease-out;
+}
+
+
+@-moz-keyframes ps {0%  { width:0px;} 100%{ width:98%;}  }
+@-moz-keyframes css        { 0%  { width:0px;} 100%{ width:98%;}  }
+@-moz-keyframes wp      { 0%  { width:0px;} 100%{ width:98%;}  }
+@-moz-keyframes drupal   { 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes javascript   { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes php {0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes seo        { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes uxpin      { 0%  { width:0px;} 100%{ width:98%;}  }
+@-moz-keyframes sketch3   { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes git   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+@-webkit-keyframes ps      { 0%  { width:0px;} 100%{ width:98%;}  }
+@-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:98%;}  }
+@-webkit-keyframes wp      { 0%  { width:0px;} 100%{ width:98%;}  }
+@-webkit-keyframes drupal   { 0%  { width:0px;} 100% { width:85%;}  }
+@-webkit-keyframes javascript   { 0%  { width:0px;} 100% { width:70%;}  }
+@-webkit-keyframes php       { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes seo        { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes uxpin      { 0%  { width:0px;} 100%{ width:98%;}  }
+@-webkit-keyframes sketch3   { 0%  { width:0px;} 100% { width:90%;}  }
+@-webkit-keyframes git   { 0%  { width:0px;} 100% { width:80%;}  }
+

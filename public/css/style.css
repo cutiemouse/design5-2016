@@ -1,0 +1,1188 @@
+/* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+	/*
+	.container{
+		width:100%;
+		max-width: 1366px;
+	}*/
+
+	*{
+		box-sizing: border-box;
+	}
+
+	a{
+		color:#747474;
+	}
+
+	a:hover{
+		text-decoration: none;
+		color:#747474;
+		text-shadow: 1px 0 0 #656565;
+	}
+	
+	h1,h2,h3,h4,h5{
+		font-family:'montserrat', helvetica, sans-serif;
+		letter-spacing: 0.03em;
+		color:#000;
+		line-height: 135%;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	
+	h1{
+      font-size:48px;
+   	}
+	
+	h2{
+      font-size:43px;
+      margin-bottom: 20px;
+	}
+	
+		
+	
+	ul {
+	    list-style: outside none none;
+	}
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      text-transform: uppercase;
+       border-bottom: 1px solid #E5E5E5;
+       height:58px;
+       position: absolute;
+       top:0;
+    }
+    .navbar-wrapper:after{
+	    float:none;
+	    clear:both;
+	    content: "";
+	    display: block;
+    }
+    
+    .navbar-wrapper .navbar a.companyName{
+      display: block;
+      float: left;
+      height: 58px;
+      width: 255px;
+      text-align: center;
+
+    }
+
+
+    .navbar-wrapper .navbar a.companyName img{
+      margin:0 auto;
+    }
+
+   .navbar-wrapper .navbar ul{
+    float:right;
+   }
+
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner li {
+      display: inline-block;
+      height: 80px;
+      margin-left: -1px;
+    }
+
+
+    .navbar .navbar-inner a {
+      border-left: 1px solid rgba(255, 255, 255, 0);
+      border-right: 1px solid rgba(255, 255, 255, 0);
+      border-left-color: #E5E5E5;
+      border-right-color: #E5E5E5;
+      color: #7F7F7F;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      line-height: 58px;
+      text-transform: uppercase;
+      transition-duration: 0.3s;
+      transition-property: color, border-right-color, border-left-color;
+      float:right;
+    }
+
+  .navbar .navbar-inner a:hover {
+      color: #000000;
+      transition-duration: 0.4s;
+      transition-property: color, border-right-color, border-left-color;
+      z-index: 10;
+  }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 0 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+.navbar-inverse .nav-collapse .nav > li > a, 
+.navbar-inverse .nav-collapse .dropdown-menu a{
+  margin-bottom: 0!important;
+}
+
+/* logoblock
+    -------------------------------------------------- */
+
+    #logoBlock{
+      margin:0 auto;
+      background:url("../img/bg_desk.jpg") no-repeat center center;
+      background-size: cover;
+      padding-top: 320px;
+      padding-bottom: 150px;
+      position: relative;
+      height: 760px;
+    }
+
+    .slogan{
+      font:300 13px 'roboto', sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow: 12px 0px 6px #3FD4D2;
+      color:#000;
+    }
+
+    #logoBlock .logo{
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      top:165px;
+      left:50%;
+      margin-left: -110px;
+    }
+    
+    
+    
+    .logo img{
+	    width:250px;
+    }
+
+    #logoBlock .left{
+      text-align: right;
+    }
+
+
+    #logoBlock .right{
+      text-align: left;
+    }
+    
+    .bg-Text{
+		color:rgba(237,237,237,0.85);
+		font:33px/95% oswald,sans-serif;
+		text-transform: uppercase;
+		max-width:960px;
+		letter-spacing: -0.025em;
+		text-align: center;
+		margin:0 auto;
+		text-shadow: 12px 0px 6px #3FD4D2;
+	}
+	
+	.bg-Text span{
+		font:lighter 36px/80%  'playfair display',serif;
+	}
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    
+  #myCarousel{
+	  text-align: center;
+	  position: relative;
+	  padding-top: 20px;
+  }
+
+	  .carousel-inner{
+		  margin-top: -100px;
+	  }
+    
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+      text-align: center;
+    }
+
+    #myCarousel .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+      position: absolute;
+      top:50%;
+      margin-top: -10px;
+      text-shadow: 1px 0 0 #656565;
+    }
+
+    .carousel .item {
+      padding-bottom: 30px;
+    }
+    .carousel img {
+      margin:5% auto 0;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      text-align: center;
+      margin:20px auto;
+      display: inline-block;
+
+    }
+    .carousel-caption a,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      font-style: italic;
+      background:#d94c00;
+      display: inline-block;
+      padding: 0 30px;
+
+    }
+
+
+.carousel-caption h1{
+        line-height: 72%;
+        padding-bottom: 5px;
+
+}
+
+    .carousel-caption a:hover{
+      background:#999;
+      text-decoration: none;
+    }
+
+
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    
+
+   
+    
+	
+		
+	/* Our Work
+    -------------------------------------------------- */
+    
+    
+	/* Filter */
+	
+	.filter li { 
+	    float: left; 
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		padding: 6px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		text-transform: uppercase;
+	}
+	
+	.filter {
+		margin:20px auto 0;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.filter a { 
+	    padding: 0 10px; 
+	    color: #334d66; 
+	    text-decoration: none; 
+	}
+	
+	.filter a:hover { 
+	    color: #decdb6; 
+	}
+	
+	.filter li:hover { 
+	    color: #fff; 
+	    background: #7adbe3;
+	}
+	
+    
+    
+	.portfolio{
+		margin:0 auto;
+		clear:both;
+		float:none;
+		padding:50px;
+		overflow: hidden;
+		text-align: center;
+		
+	}
+	
+		.portfolio.print{
+			background:url("../img/bg_pattern.jpg");
+		}
+		.portfolio{
+			background:rgba(219, 255, 92, 0.1);
+			margin-top: -55px;
+		}
+	
+	.portfolioContainer{
+		max-width: 1680px;
+		width: 100%;
+		margin:0 auto;
+		position: relative;
+	}
+	
+	.portfolio:before,
+	.portfolio:after{
+	    border-top: 700px solid rgba(0, 188, 215, 0.1);
+	    border-left: 700px solid rgba(207, 222, 33, 0.1);
+	    border-bottom: 700px solid rgba(207, 222, 33, 0.1);
+	    border-right: 700px solid rgba(0, 188, 215, 0.1);
+	    content: "";
+	    height: 3200px;
+	    /*margin: -1600px -128px 0 0;*/
+	    position: absolute;
+	    right: 45.5%;
+	    top: 90%;
+	    transform: rotate(45deg);
+	    width: 3200px;
+	    z-index: -1;
+		
+	}
+	
+	.portfolio:after{
+		left: 50%;
+	    margin-left: -128px;
+	    margin-right: 0;
+	    right: auto;
+	}
+	.portfolio:after{
+		clear:both;
+		float:none;
+	}
+	
+	.portfolio article{
+		height:auto;
+		float:left;
+		padding:20px;
+		min-height: 540px;
+		z-index: 2;
+	}
+	
+	.portfolio article h3{
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+		font:19px/125% "montserrat",sans-serif;
+		color:#000;
+	}
+	
+	.portfolio .details p{
+		font:lighter 15px/130% "Open Sans",sans-serif !important;
+	}
+	
+	.portfolio article.webdesign .gridImage{
+		max-width:500px;
+		height:auto;
+		overflow: hidden;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	
+	.portfolio article img{
+		border:1px solid #fff;
+		padding:1px;
+		text-align: center;
+	    width:100%;
+	    height:auto;
+	    transition:all 0.3s ease-in-out 0s;
+	    background:rgba(0,0,0,0.08);
+	}
+	
+	.portfolio article:hover img{
+		-webkit-filter: grayscale(100%); /* Webkit Webkit Chrome, Safari, Opera*/ 
+	    filter: gray; /* IE6-9 */
+	    filter: grayscale(100%); /* W3C */
+	    width:130%;
+	}
+	
+	 /* Portfolio happyClients
+    -------------------------------------------------- */
+	#happyClients{
+		text-align: center;
+		background:#000 url("../img/bg_faces.jpg");
+		padding:30px 275px 30px;
+		margin-bottom: 40px;
+		background-attachment: fixed;
+	}
+	
+	#happyClients h2{
+		color:#fff;
+	}
+	
+	
+	#happyClients .container{
+		width:100%;
+		max-width: 1920px;
+		margin:0 auto;
+		text-align: center;
+		display: inline;
+	}
+
+	#happyClients article{
+		background: none;
+		border:none;
+		padding:0;
+		min-height:80px;
+		display: inline;
+	}
+	
+		#happyClients .intro-text p{
+			color:#7adbe3;
+			margin-bottom: 25px;
+			
+		}
+		#happyClients article .gridImage img{
+			width:auto;
+			background:none;
+			border:none;
+			filter:invert(1);
+			-webkit-filter:invert(100);
+			opacity: 0.8;
+			filter:alpha(opacity=80);
+		}
+	
+	 /* Portfolio Websites
+    -------------------------------------------------- */
+	
+	
+	.portfolio article.webdesign .dots{
+		left: 14px;
+	    position: absolute;
+	    top: 8px;
+	}
+		.portfolio article.webdesign{
+			width:33.3%;
+			padding:30px;
+		}
+		
+		.portfolio article.branding{
+			width:20%;
+			padding:30px;
+		}
+	
+	.portfolio article.webdesign .dots i{
+		background: #898989;
+	    border-radius: 10px;
+	    display: inline-block;
+	    height: 10px;
+	    margin: 0 4px;
+	    width: 10px;
+    }
+	.portfolio article.webdesign .gridImage{
+		width: 520px;
+		background: #eeeeee; /* Old browsers */
+		background: -moz-linear-gradient(top, #eeeeee 0%, #b9b9b9 5%,#cccccc 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #eeeeee 0%,#b9b9b9 5%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #eeeeee 0%, #b9b9b9 5%,#808080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9*/
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		display: block;
+	    padding: 35px 0px 3px;
+	    position: relative;
+	    width: 100%;
+	    /*height:630px;*/
+	    overflow: hidden;
+		
+		
+	}
+	
+	.portfolio article.webdesign img{
+		border:none;
+	}
+	
+	
+	 /* About me
+    -------------------------------------------------- */
+    
+    #aboutMe,
+    #mySkills{
+	    width:50%;
+	    float:left;
+    }
+    
+    #aboutMe h3,
+    #mySkills h3{
+	    font: 20px/130% "montserrat",sans-serif;
+	    text-transform: uppercase;
+    }
+    #whatICanDo{
+	   	width:100%;
+	    padding:30px 250px 50px;
+	    overflow: hidden; 
+	    text-align: center;
+    }
+    #skills{
+	    background:url("../img/responsiveLayout.jpg") no-repeat center bottom;   
+    }
+    
+    	#aboutMe{
+	    	color: #000;
+		    font: lighter 23px/150% Raleway,Roboto,sans-serif;
+		    letter-spacing: 0.025em;
+		    padding-right: 2%;
+		    text-align: right;
+		    padding-top: 80px;
+    	}
+    	
+    	#mySkills{
+	    	padding-left: 1%;
+	    	padding-top: 30px;
+	    }
+    .intro-text p{
+	    font:italic 18px/150% 'PT serif', georgia,'times new roman',serif;
+	    color:#9b9b9b;
+    }
+    
+      #whatICanDo .intro-text p .subtitle{
+	       font:normal 24px/150% Raleway,Roboto,sans-serif;
+	       color:#000;
+      }
+    
+    h2:after{
+	    content:"";
+	    width:80px;
+	    display: block;
+	    margin:10px auto 0;
+	    border-bottom: 5px solid #7ADBE3;
+	      }
+    
+	.skillGroup h3{
+		color:#000;
+		text-transform: uppercase;
+		font:20px/130% "montserrat",sans-erif;
+		margin-bottom: 25px;
+	}
+	.skillGroup #design,
+	.skillGroup #webDev{
+		float:left;
+		width: 50%;
+	}
+		.skillGroup #design{
+			padding-right: 20px;
+		}
+		
+		.skillGroup #webDev{
+			padding-left: 20px;
+		}
+
+	.progress-bar {
+	    background-color: #337ab7;
+	    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+	    color: #fff;
+	    float: left;
+	    font-size: 12px;
+	    height: 100%;
+	    line-height: 20px;
+	    text-align: center;
+	    transition: width 0.6s ease 0s;
+	    width: 0;
+	}
+	
+	.progress-bar {
+	    box-shadow: none;
+	    transition: width 1.5s ease-in-out 0s;
+	}
+
+	.progress-solid.meter {
+	    height: 21px;
+	    margin-bottom: 20px;
+	    position: relative;
+	}
+	
+	.meter .progress-bar {
+	    background:url('../img/dottedBG.png');
+	    display: block;
+	    height: 21px;
+	    overflow: hidden;
+	    position: relative;
+	}
+	
+	.meter .progress-bar h6:after{
+	 	border-style: solid;
+	    border-width: 10px 10px 10px 10px;
+	    content:"";
+	    display: block;
+	    border-color:transparent transparent transparent #337ab7;
+	    float: left;
+	    height: 0;
+	    width: 0;
+	    position: absolute;
+	    top:0;
+	    right:-20px;
+    }
+	.skills-progress h6 span {
+	    float: right;
+	}
+	
+	.skills-progress h6, .skills-progress h6 span {
+	    color: #333;
+	    font-family: "Montserrat",sans-serif;
+	    font-size: 13px;
+	    letter-spacing: 0.02em;
+	    margin-bottom: 10px;
+	    margin-top: 0;
+	    text-transform: uppercase;
+	    text-align: left;
+	    padding-left:10px;
+	    padding-right: 5px;
+	}
+	
+	.sr-only {
+	    border: 0 none;
+	    clip: rect(0px, 0px, 0px, 0px);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	}
+	#software{
+		font:lighter 14px/140% "Open Sans",sans-serif;
+	}
+	
+    /* Gallery CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    
+    .gallery h2 {
+      font-weight: normal;
+      padding-top: 15px;
+    }
+
+    .gallery img{
+      border-bottom: 2px solid #e5e5e5;
+    }
+
+
+    .gallery .span4 p {
+      margin-right: 10px;
+      font-family: georgia, serif;
+    }
+
+    
+
+    .gallery h2.featurette-heading{
+        text-align: left;
+    }
+
+    .gallery h2 .category{
+      text-transform: uppercase;
+      font: 14px 'roboto',sans-serif;
+      letter-spacing: 0.05em;
+      color:#d94c00;
+    }
+
+
+    .gallery .sepa{
+      color:#d94c00;
+    }
+
+
+    .gallery .featurette img{
+      border:none;
+
+    }
+
+    .gallery .row{
+      margin-top:40px;
+    }
+
+
+    .gallery .whatTitle,
+    .gallery .featuredProjectTitle{
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .gallery .whatTitle h1,
+    .gallery .featuredProjectTitle h1{
+      font:57px/130% 'montserrat', helvetica, sans-serif;
+      letter-spacing: 0.03em;
+      display: inline-block;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+      color:#000;
+
+    }
+
+  
+    
+
+
+    .ie7 .gallery h1:before,
+    .ie8 .gallery h1:before{
+      display: none;
+    }
+
+
+
+    .gallery .whatTitle p{
+      font: lighter 20px/130% 'roboto condensed',sans-serif;
+    }
+
+    .gallery .row.topRow{
+      margin-top: 0;
+    }
+	
+	.gallery .projectImage{
+		position:relative;	
+		overflow:hidden;
+    border-radius:0 25%;
+
+	}
+	
+	.gallery .projectImage .shade{
+		background: none repeat scroll 0 0 rgba(10,182,191, 0);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-bottom:1px solid #D94c00;
+		border-right:14px solid rgba(255,255,255,1);
+		border-left:14px solid rgba(255,255,255,1);
+
+	}
+	
+	.gallery .projectImage:hover .shade{
+		background: none repeat scroll 0 0 rgba(10,182,191, 0.5);
+	}
+	
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 6% 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+      margin-top:50px;
+    }
+
+
+    .featurette img{
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        
+   }
+
+    .featurette .websiteExample{
+		border-radius: 4px 4px 0 0;
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+		float: left;
+		margin-right: 50px;
+		position: relative;
+      
+    }
+	
+	.featurette .websiteExample .top{
+		 background: url("../img/browser_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+		border-radius: 4px 4px 0 0;
+		height: 35px;
+		width: 100%;
+	}
+	
+	
+	.featurette .websiteExample .top .start{
+		background: url("../img/browser_start.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		border-radius: 4px 0 0 0;
+		float: left;
+		min-width: 80%;
+		padding:6px 0 0 80px;
+	}
+	
+	.featurette .websiteExample .top .start .title{
+		font:12px 'open sans',sans-serif;
+		text-transform:capitalize;
+	}
+	
+	
+	.featurette .websiteExample .top .end{
+		background: url("../img/browser_end.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+		border-radius: 0 4px 0 0;
+		float: right;
+		height: 100%;
+		width: 43px;
+	
+	}
+	
+	.websiteExample .content{
+		overflow:hidden;
+	}
+
+
+  #backToTop{
+    background:#171717;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 3%;
+
+  }
+
+  .headshot img{
+    border-radius: 50%;
+    width:180px;
+  }
+
+  #contact{
+    color:#717171;
+    padding:3% 0;
+    background:rgba(0,0,0,0.95) url("../img/bubbles.png") no-repeat center center;
+  }
+
+   #contact h3{
+    border-bottom: 1px dotted #717171;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+   }
+
+   #downloadPdf{
+    font:lighter 14px/160% 'roboto', sans-serif;
+    color:#43DDEE;
+
+   }
+
+
+#contact p {
+  font:1em/160% 'roboto',sans-serif;
+}
+
+
+    #contact p span{
+      display: inline-block;
+      width: 55px;
+      color:#4c4c4c;
+      text-transform: uppercase;
+      font-size: 0.95em;
+    }
+
+
+    #copy{
+      text-align: center;
+      border-top: 1px solid #4e4e4e;
+      padding-top: 1%;
+      margin-top:5%;
+    }
+
+     p#copy{
+
+      font-size: 12px;
+      color:#515151;
+
+     }
+
+    footer a, footer a:hover{
+      color:#43DDEE;
+      text-decoration: underline;
+    }
+
+    footer a:hover{
+      opacity:0.8;
+    }
+
+
+    #static_backToTop{
+      position: absolute;
+      z-index: 999;
+      background: rgba(255,121,49,1);
+      position: fixed;
+      bottom:0;
+      right:0;
+      width:40px;
+      text-align: center;
+      padding:8px 10px 3px;
+      border-radius: 5px 5px 0 0;
+      text-transform: uppercase;
+      color:#fff;
+      display: inline-block;
+      text-decoration: none;
+      font:lighter 28px 'open sans', sans-serif;
+      box-shadow: 2px 2px 6px #777;
+    
+    }
+
+
+    #static_backToTop a:hover{
+      text-decoration: none;
+    }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 1279px) {
+	
+	.portfolio article.webdesign{
+		width:50%;
+	}
+	
+	.portfolio article.webdesign .gridImage{
+		height:768px;
+	}
+	
+}
+
+
+
+@media (max-width: 979px) {
+
+      .navbar-wrapper {
+              height:60px;
+       }
+
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+
+      }
+
+
+.navbar .navbar-inner  ul{
+  z-index: 999;
+  background:rgba(255,255,255,0.9);
+  width:100%!important;
+  box-shadow: 2px 2px 2px #999;
+
+}
+
+
+.navbar .navbar-inner li{
+  display: block;
+  width:100%;
+  height:auto;
+  margin-left: 0!important;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 0;
+
+}
+
+.navbar .navbar-inner ul li a{
+  line-height: 300%;
+  letter-spacing: -0.02em!important;
+
+
+}
+
+
+     
+
+        .nav-collapse .nav > li > a, 
+        .nav-collapse .dropdown-menu a{
+          border-radius: 0!important;
+        }
+
+
+
+
+      
+      .carousel img {
+        width: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      
+      .carousel .item {
+        height: auto;
+      }
+      .carousel img {
+        height: auto;
+      }
+      .carousel-caption {
+        margin-top: 10%;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px; 
+        margin-top: 10px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+
+      #whatICanDo .span4 p{
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+      }
+      
+      
+
+      #whatICanDo .span4#logowork p{
+
+        border:0;
+        margin-bottom:0;
+        padding-bottom: 0;
+      }
+
+
+       .gallery h2{
+          font-size: 190%;
+          -webkit-font-smoothing:antialiased;
+       }
+
+       .gallery .whatTitle h1, .gallery .featuredProjectTitle h1{
+        font-size: 260%;
+        letter-spacing: -0.025em;
+       }
+
+
+       .gallery .whatTitle h1:before{
+        height:100px;
+        width:100px;
+       }
+
+
+
+      .gallery .featuredProjectTitle h1:before{
+         border-left: 52px solid;
+          border-right: 45px solid;
+          border-bottom:52px solid #43DDEE;
+          margin-left: 60%;
+      }
+
+
+
+      .gallery .row{
+        margin-top:0;
+      }
+
+      #contact{
+        padding:0 12px;
+      }
+
+      #contact h3{
+        font-size: 20px;
+        letter-spacing: -0.025em;
+
+      }
+
+
+      .headshot{
+        text-align: center;
+      }
+
+      .headshot img{
+        margin:20px auto;
+        width:80%;
+      }
+
+
+
+
+
+    }
+
+@media only screen and (max-width:330px){
+
+  .navbar-wrapper .navbar a.companyName{
+    width:auto;
+    margin-left: 20px;
+  }
+
+  .navbar .navbar-inner a{
+    border:none!important;
+  }
+
+
+
+}
